@@ -1,0 +1,15 @@
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\bin\Debug\net6.0\StringMaker_Hancock_Project.exe
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\bin\Debug\net6.0\StringMaker_Hancock_Project.deps.json
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\bin\Debug\net6.0\StringMaker_Hancock_Project.runtimeconfig.json
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\bin\Debug\net6.0\StringMaker_Hancock_Project.dll
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\bin\Debug\net6.0\StringMaker_Hancock_Project.pdb
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\StringMaker_Hancock_Project.csproj.AssemblyReference.cache
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\StringMaker_Hancock_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\StringMaker_Hancock_Project.AssemblyInfoInputs.cache
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\StringMaker_Hancock_Project.AssemblyInfo.cs
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\StringMaker_Hancock_Project.csproj.CoreCompileInputs.cache
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\StringMaker_Hancock_Project.dll
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\refint\StringMaker_Hancock_Project.dll
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\StringMaker_Hancock_Project.pdb
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\StringMaker_Hancock_Project.genruntimeconfig.cache
+C:\Users\femal\source\IT113\StringMaker_Hancock_Solution\StringMaker_Hancock_Project\obj\Debug\net6.0\ref\StringMaker_Hancock_Project.dll
