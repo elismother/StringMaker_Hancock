@@ -1,7 +1,7 @@
 ﻿// Brittany Hancock
 // IT113
-// NOTES:  notes the instructor should read
-// BEHAVIORS NOT IMPLEMENTED AND WHY:
+// NOTES:  none
+// BEHAVIORS NOT IMPLEMENTED AND WHY: n/a
 
 using System.Runtime.InteropServices;
 
@@ -11,14 +11,14 @@ namespace StringMaker_Hancock_Project
     {
         static void Main(string[] args)
         {
-            StringMaker StringManager = new StringMaker();
+            StringMaker StringManager = new();
             Console.WriteLine(StringManager.Reverse("Sunbeam Tiger"));
+            Console.WriteLine(StringManager.ToString());
             Console.WriteLine(StringManager.Reverse("Sunbeam Tiger", true));
+            Console.WriteLine(StringManager.Equals("Sunbeam Tiger"));
             Console.WriteLine(StringManager.Symmetric("ABBA"));
             Console.WriteLine(StringManager.Symmetric("ABA"));
             Console.WriteLine(StringManager.Symmetric("ABba"));
-            Console.WriteLine(StringManager.ToString("Dan"));
-
         }
     }
 }

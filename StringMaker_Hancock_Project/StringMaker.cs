@@ -10,9 +10,11 @@ namespace StringMaker_Hancock_Project
     internal class StringMaker
     {
         private string _string;
+
         public string Reverse (string s)
         {
-            Stack<char> charStack = new Stack<char>();
+            _string = s;
+            Stack<char> charStack = new();
             foreach (char c in s)
             {
                     charStack.Push(c);
@@ -20,49 +22,57 @@ namespace StringMaker_Hancock_Project
             s = "";
             foreach (char c in charStack)
             {
-                    s = s + c;
+                    s += c;
             }
             return s;
         }
 
         public string Reverse (string s, bool PreserveCaseLocation)
         {
-            int count = -1;
-            char lowerChar;
-            char upperCase;
-
-            Stack<char> charStack = new Stack<char>();
-            Queue<int> intQueue = new Queue<int>();
-            foreach (char c in s)
+            _string = s;
+            if (!PreserveCaseLocation)
             {
-                count++;
-                if (char.IsUpper(c))
-                {
-                    intQueue.Enqueue(count);
-                }
-                if (char.IsLetter(c))
-                {
-                    lowerChar = char.ToLower(c);
-                    charStack.Push(lowerChar);
-                }
-                else
-                {
-                    charStack.Push(c);
-                }
+                Reverse(s);
             }
-            s = "";
-            count = -1;
-            foreach (char c in charStack)
+            else
             {
-                count++;
-                if (intQueue.Contains(count))
+                int count = -1;
+                char lowerChar;
+                char upperCase;
+
+                Stack<char> charStack = new();
+                Queue<int> intQueue = new();
+                foreach (char c in s)
                 {
-                    upperCase = char.ToUpper(c);
-                    s = s + upperCase;
+                    count++;
+                    if (char.IsUpper(c))
+                    {
+                        intQueue.Enqueue(count);
+                    }
+                    if (char.IsLetter(c))
+                    {
+                        lowerChar = char.ToLower(c);
+                        charStack.Push(lowerChar);
+                    }
+                    else
+                    {
+                        charStack.Push(c);
+                    }
                 }
-                else
+                s = "";
+                count = -1;
+                foreach (char c in charStack)
                 {
-                    s = s + c;
+                    count++;
+                    if (intQueue.Contains(count))
+                    {
+                        upperCase = char.ToUpper(c);
+                        s += upperCase;
+                    }
+                    else
+                    {
+                        s += c;
+                    }
                 }
             }
             return s;
@@ -70,7 +80,8 @@ namespace StringMaker_Hancock_Project
 
         public bool Symmetric (string s)
         {
-            Queue<char> charQueue = new Queue<char>();
+            _string = s;
+            Queue<char> charQueue = new();
             string reversedString = this.Reverse(s);
             foreach (char c in s)
             {
@@ -89,10 +100,87 @@ namespace StringMaker_Hancock_Project
 
         public override string ToString()
         {
+            if (_string == null||_string == "")
+            {
+                return "-1";
+            }
+            int value = 0;
+            int trim;
+            string s = _string;
+            string concat = "";
+            string final = "";
+            foreach (char c in s)
+            {
+                value += (int)c;
+            }
+            while (value > 0)
+            {
+                trim = value % 10;
+                concat += trim;
+                value /= 10;
+            }
+            concat = Reverse(concat);
 
-            string s = "ok";
+            foreach (char c in concat)
+            {
+                if (c == '-')
+                {
+                    final = "Negative ";
+                }
+                if (c == '1')
+                {
+                    final += "One ";
+                }
+                if (c == '2')
+                {
+                    final += "Two ";
+                }
+                if (c == '3')
+                {
+                    final += "Three ";
+                }
+                if (c == '4')
+                {
+                    final += "Four ";
+                }
+                if (c == '5')
+                {
+                    final += "Five ";
+                }
+                if (c == '6')
+                {
+                    final += "Six ";
+                }
+                if (c == '7')
+                {
+                    final += "Seven ";
+                }
+                if (c == '8')
+                {
+                    final += "Eight ";
+                }
+                if (c == '9')
+                {
+                    final += "Nine ";
+                }
+            }
+            if (final[^1] == ' ')
+            {
+                final = final.Trim();
+            }
+            return final;
+        }
 
-            return s;
+        public override bool Equals(object? obj)
+        {
+            if (obj is string stringValue)
+            {
+                if (stringValue == _string)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
